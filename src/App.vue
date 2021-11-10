@@ -96,7 +96,7 @@ const menuOptions = [
 
 <style>
 .top_nav{
-    width: 100%;
+    width: 96vw;
     background-color: rgb(7, 23, 72);
     position: fixed;
     z-index: 9;
