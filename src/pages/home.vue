@@ -30,7 +30,7 @@
             <n-gi :span="3" :offset="1">
                 <div :class="scrollNumber>100?'animate__animated  animate__bounceInDown':''">
                     <div class="d-flex flex-column align-items-center">
-                        <img src="../public/img/Desktop/xxsj-wbe_home/voice.png" style="width:70px;height:70px;"/>
+                        <img src="../public/img/Desktop/xxsj-wbe_home/voice.png" style="width:90px;height:90px;"/>
                         <div class="text-white mt-2" style="font-size:23px;color:#DDDCDC;">语音卡</div>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
             <n-gi :span="4" :offset="1">
                 <div :class="scrollNumber>100?'animate__animated  animate__bounceInDown':''">
                     <div class="d-flex flex-column align-items-center">
-                        <img src="../public/img/Desktop/xxsj-wbe_home/wallet.png" style="width:70px;height:70px;"/>
+                        <img src="../public/img/Desktop/xxsj-wbe_home/wallet.png" style="width:90px;height:90px;"/>
                         <div class="text-white mt-2" style="font-size:23px;color:#DDDCDC;">流量卡</div>
                     </div>
                 </div>
@@ -46,7 +46,7 @@
             <n-gi :span="4" :offset="1">
                 <div :class="scrollNumber>100?'animate__animated  animate__bounceInDown':''">
                     <div class="d-flex flex-column align-items-center">
-                        <img src="../public/img/Desktop/xxsj-wbe_home/register.png" style="width:70px;height:70px;"/>
+                        <img src="../public/img/Desktop/xxsj-wbe_home/register.png" style="width:90px;height:90px;"/>
                         <div class="text-white mt-2" style="font-size:23px;color:#DDDCDC;">0 月租卡</div>
                     </div>
                 </div>
@@ -54,7 +54,7 @@
             <n-gi :span="3" :offset="1">
                 <div :class="scrollNumber>100?'animate__animated  animate__bounceInDown':''">
                     <div class="d-flex flex-column align-items-center">
-                        <img src="../public/img/Desktop/xxsj-wbe_home/phone.png" style="width:70px;height:70px;"/>
+                        <img src="../public/img/Desktop/xxsj-wbe_home/phone.png" style="width:90px;height:90px;"/>
                         <div class="text-white mt-2" style="font-size:23px;color:#DDDCDC;">外呼系统</div>
                     </div>
                 </div>
@@ -150,7 +150,7 @@
                 </div>
             </n-gi>
             <n-gi :span="10" :offset="1">
-                <img src="../public/img/Desktop/xxsj-wbe_home/cooperater_item.png" style="width:100%;object-fit: cover;margin-top:-20px;" />
+                <img src="../public/img/Desktop/xxsj-wbe_home/cooperater_item.png" style="width:100%;object-fit: cover;margin-top:-20px;height:500px;" />
             </n-gi>
         </n-grid>
     </div>
@@ -196,46 +196,12 @@
             查看更多新闻
         </div>
     </div>
-    <div class="footer d-flex align-items-center text-white">
-        <div style="font-size:80px;letter-spacing:4px;font-weight:700;font-family: ZhenyanGB;">
-            xushangshiji
-        </div>
-        <n-grid :cols="10">
-            <n-gi :span="1" :offset="1">
-                <div style="line-height: 1.4;font-size:20px;">产品中心</div>
-                <div class="mt-2" style="line-height: 1.6;font-size:16px;">最新产品</div>
-                <div style="line-height: 1.6;font-size:16px;">实时资讯</div>
-            </n-gi>
-            <n-gi :span="1" :offset="1">
-                <div style="line-height: 1.4;font-size:20px;">商务中心</div>
-                <div class="mt-2" style="line-height: 1.6;font-size:16px;">合作加盟</div>
-                <div style="line-height: 1.6;font-size:16px;">售后服务</div>
-            </n-gi>
-            <n-gi :span="1" :offset="1">
-                <div style="line-height: 1.4;font-size:20px;">呼叫中心</div>
-                <div class="mt-2" style="line-height: 1.6;font-size:16px;">在线客服</div>
-                <div style="line-height: 1.6;font-size:16px;">400电话</div>
-            </n-gi>
-            <n-gi :span="1" :offset="1">
-                <div class="d-flex flex-column align-items-center">
-                    <img src="../public/img/Desktop/xxsj-wbe_home/case.png" style="width:80px;height:80px;object-fit: cover;">
-                    <div style="line-height: 1.4;font-size:18px;margin-top:5px;">APP下载</div>
-                </div>
-            </n-gi>
-            <n-gi :span="1" :offset="1">
-                <div class="d-flex flex-column align-items-center">
-                    <img src="../public/img/Desktop/xxsj-wbe_home/case.png" style="width:80px;height:80px;object-fit: cover;">
-                    <div style="line-height: 1.4;font-size:18px;margin-top:5px;">关注公众号</div>
-                </div>
-            </n-gi>
-        </n-grid>
-    </div>
   </div>
 </template>
 
 <script setup>
     import { reactive , watchEffect} from 'vue'
-    import { NCarousel,NSpace,NGrid,NGi,NIcon,NImage,NButton} from 'naive-ui'
+    import { NCarousel,NSpace,NGrid,NGi,NIcon} from 'naive-ui'
     import watchScorll from '../hooks/watchScorll'
     import {  } from '@vicons/ionicons5'
 
@@ -254,8 +220,7 @@
 <style>
 .carousel-img {
   width: 100%;
-  height: 680px;
-  object-fit: cover;
+  object-fit: contain;
 }
 .d-flex{
     display: flex;
@@ -284,7 +249,7 @@
      background-image: url('../public/img/Desktop/xxsj-wbe_home/serve_bg.jpg');
      background-repeat: no-repeat;
      background-size: 100%;
-     height: 520px;
+     height: 850px;
  }
  .text-ZY{
     font-size: 80px;
@@ -325,10 +290,5 @@
      margin: 100px auto 20px;
      border: solid 2px #ffffff;
      border-radius: 10px;
- }
- .footer{
-     background-color: #E14F60;
-     height: 160px;
-     padding: 50px;
  }
 </style>

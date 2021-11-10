@@ -1,22 +1,63 @@
 <template>
-  <div ref="container">
-    <div class="top_nav">
-      <n-config-provider :theme="darkTheme" >
-        <n-space justify="end">
-          <n-menu v-model:value="activeKey" mode="horizontal" :options="menuOptions" />
-        </n-space>
-      </n-config-provider>
+  <n-layout>
+      <n-layout-header>
+        <div class="top_nav">
+          <n-config-provider :theme="darkTheme" >
+            <n-space justify="end">
+              <n-menu v-model:value="activeKey" mode="horizontal" :options="menuOptions" />
+            </n-space>
+          </n-config-provider>
+        </div>
+      </n-layout-header>
+      <n-layout-content>
+        <div style="height:80px;"></div>
+        <router-view/>
+      </n-layout-content>
+      <n-layout-footer>
+        <div class="footer d-flex align-items-center text-white">
+        <div style="font-size:80px;letter-spacing:4px;font-weight:700;font-family: ZhenyanGB;">
+            xushangshiji
+        </div>
+        <n-grid :cols="10">
+            <n-gi :span="1" :offset="1">
+                <div style="line-height: 1.4;font-size:20px;">产品中心</div>
+                <div class="mt-2" style="line-height: 1.6;font-size:16px;">最新产品</div>
+                <div style="line-height: 1.6;font-size:16px;">实时资讯</div>
+            </n-gi>
+            <n-gi :span="1" :offset="1">
+                <div style="line-height: 1.4;font-size:20px;">商务中心</div>
+                <div class="mt-2" style="line-height: 1.6;font-size:16px;">合作加盟</div>
+                <div style="line-height: 1.6;font-size:16px;">售后服务</div>
+            </n-gi>
+            <n-gi :span="1" :offset="1">
+                <div style="line-height: 1.4;font-size:20px;">呼叫中心</div>
+                <div class="mt-2" style="line-height: 1.6;font-size:16px;">在线客服</div>
+                <div style="line-height: 1.6;font-size:16px;">400电话</div>
+            </n-gi>
+            <n-gi :span="1" :offset="1">
+                <div class="d-flex flex-column align-items-center">
+                    <img src="./public/img/Desktop/xxsj-wbe_home/case.png" style="width:80px;height:80px;object-fit: cover;">
+                    <div style="line-height: 1.4;font-size:18px;margin-top:5px;">APP下载</div>
+                </div>
+            </n-gi>
+            <n-gi :span="1" :offset="1">
+                <div class="d-flex flex-column align-items-center">
+                    <img src="./public/img/Desktop/xxsj-wbe_home/case.png" style="width:80px;height:80px;object-fit: cover;">
+                    <div style="line-height: 1.4;font-size:18px;margin-top:5px;">关注公众号</div>
+                </div>
+            </n-gi>
+        </n-grid>
     </div>
-    <div style="height:80px;">
-
-    </div>
-    <router-view/>
+      </n-layout-footer>
+    </n-layout>
+  <div>
+    
   </div>
 </template>
 
 <script setup>
 import { resolveComponent , h, ref } from 'vue'
-import { NIcon , NMenu , NSpace , NConfigProvider , darkTheme ,NAffix} from 'naive-ui'
+import { NIcon,NMenu,NSpace,NConfigProvider,darkTheme,NLayout,NLayoutContent,NLayoutHeader,NLayoutFooter,NGrid,NGi} from 'naive-ui'
 import {
   BookOutline as BookIcon,
   PersonOutline as PersonIcon,
@@ -101,6 +142,11 @@ const menuOptions = [
     position: fixed;
     z-index: 9;
     padding:20px 40px;
+ }
+  .footer{
+     background-color: #E14F60;
+     height: 160px;
+     padding: 50px;
  }
 ::-webkit-scrollbar {
     width: 4px;
