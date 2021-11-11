@@ -75,7 +75,7 @@
                 <n-gi :span="6">
                     <div :class="scrollNumber>100?'animate__animated  animate__bounceInDown':''">
                         <div class="d-flex flex-column align-items-center">
-                            <img src="../public/img/Desktop/xxsj-wbe_home/case.png" style="width:70px;height:70px;"/>
+                            <img src="../public/img/Desktop/xxsj-wbe_home/case.png" style="width:90px;height:90px;"/>
                             <div class="text-white mt-2" style="font-size:23px;color:#DDDCDC;">多样化品牌套餐</div>
                             <div class="text-white" style="font-size:16px;line-height:2;">语音卡系列</div>
                             <div class="text-white" style="font-size:16px;line-height:2;">流量卡系列</div>
@@ -86,7 +86,7 @@
                 <n-gi :span="6">
                     <div :class="scrollNumber>100?'animate__animated  animate__bounceInDown':''">
                         <div class="d-flex flex-column align-items-center">
-                            <img src="../public/img/Desktop/xxsj-wbe_home/cooperate.png" style="width:70px;height:70px;"/>
+                            <img src="../public/img/Desktop/xxsj-wbe_home/cooperate.png" style="width:90px;height:90px;"/>
                             <div class="text-white mt-2" style="font-size:23px;color:#DDDCDC;">多种合作方式</div>
                             <div class="text-white" style="font-size:16px;line-height:2;">终端客户</div>
                             <div class="text-white" style="font-size:16px;line-height:2;">下级代理</div>
@@ -96,7 +96,7 @@
                 <n-gi :span="6">
                     <div :class="scrollNumber>100?'animate__animated  animate__bounceInDown':''">
                         <div class="d-flex flex-column align-items-center">
-                            <img src="../public/img/Desktop/xxsj-wbe_home/scene.png" style="width:70px;height:70px;"/>
+                            <img src="../public/img/Desktop/xxsj-wbe_home/scene.png" style="width:90px;height:90px;"/>
                             <div class="text-white mt-2" style="font-size:23px;color:#DDDCDC;">多场景的使用方案</div>
                             <div class="text-white" style="font-size:16px;line-height:2;">企业电销</div>
                             <div class="text-white" style="font-size:16px;line-height:2;">微信社群运营</div>
@@ -107,7 +107,7 @@
                 <n-gi :span="6">
                     <div :class="scrollNumber>100?'animate__animated  animate__bounceInDown':''">
                         <div class="d-flex flex-column align-items-center">
-                            <img src="../public/img/Desktop/xxsj-wbe_home/app.png" style="width:70px;height:70px;"/>
+                            <img src="../public/img/Desktop/xxsj-wbe_home/app.png" style="width:90px;height:90px;"/>
                             <div class="text-white mt-2" style="font-size:23px;color:#DDDCDC;">领先的平台支持</div>
                             <div class="text-white" style="font-size:16px;line-height:2;">业内领先一站式平台</div>
                             <div class="text-white" style="font-size:16px;line-height:2;">骚扰拦截、诈骗预警</div>
@@ -222,29 +222,6 @@
   width: 100%;
   object-fit: contain;
 }
-.d-flex{
-    display: flex;
-    flex-direction: row;
-}
-.flex-column{
-    flex-direction: column;
-}
-.align-items-start{
-    align-items: flex-start;
-}
-.align-items-end{
-    align-items: flex-end;
-}
-.align-items-center{
-    align-items: center;
-}
-.text-white{
-    color: #fff;
-}
-.mt-2{
-    margin-top: 20px;
-}
-
 .serve{
      background-image: url('../public/img/Desktop/xxsj-wbe_home/serve_bg.jpg');
      background-repeat: no-repeat;
