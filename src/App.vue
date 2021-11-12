@@ -10,7 +10,6 @@
         </div>
       </n-layout-header>
       <n-layout-content>
-        <div style="height:80px;"></div>
         <router-view/>
       </n-layout-content>
       <n-layout-footer>
@@ -125,7 +124,7 @@ const menuOptions = [
       h(
         resolveComponent('router-link'),
         {
-          to: '/'
+          to: '/joinus'
         },
         { default: () => '加入我们' }
       ),
@@ -138,7 +137,8 @@ const menuOptions = [
 <style>
 .top_nav{
     width: 96vw;
-    background-color: rgb(7, 23, 72);
+    background-color: rgb(5,5,5);
+    opacity: 0.7;
     position: fixed;
     z-index: 9;
     padding:20px 40px;

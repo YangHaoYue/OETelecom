@@ -113,11 +113,11 @@
     background-image: url('../../public/img/Desktop/xxsj-wbe_aboutus/TestimonialBackground.png');
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 880px;
+    height: 980px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 57px 80px 0;
+    padding: 107px 80px 0;
     .title{
       font-size:40px;
       margin-bottom:70px;

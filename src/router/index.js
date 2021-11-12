@@ -10,7 +10,12 @@
          path:'/about',
          name:'About',
          component:()=> import ('../pages/about/about.vue')
-     }
+     },
+     {
+        path:'/joinus',
+        name:'JoinUs',
+        component:()=> import ('../pages/joinUs.vue')
+    }
  ]
 
  const router = createRouter({
