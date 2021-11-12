@@ -1,0 +1,97 @@
+.slide-left {
+	-webkit-animation: slide-left 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-left 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(60px);
+            transform: translateX(60px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(60px);
+            transform: translateX(60px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+.slide-right {
+	-webkit-animation: slide-right 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-right 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes slide-right {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(60px);
+              transform: translateX(60px);
+    }
+  }
+  @keyframes slide-right {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(60px);
+              transform: translateX(60px);
+    }
+  }
+  .swiper-left {
+	-webkit-animation: swiper-left 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: swiper-left 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes swiper-left {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes swiper-left {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+.swiper-right {
+	-webkit-animation: swiper-right 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: swiper-right 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes swiper-right {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+    }
+  }
+  @keyframes swiper-right {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+    }
+  }
+  

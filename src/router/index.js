@@ -9,7 +9,7 @@
      {
          path:'/about',
          name:'About',
-         component:()=> import ('../pages/about.vue')
+         component:()=> import ('../pages/about/about.vue')
      }
  ]
 

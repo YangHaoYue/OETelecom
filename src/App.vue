@@ -148,6 +148,7 @@ const menuOptions = [
      height: 160px;
      padding: 50px;
  }
+ 
 ::-webkit-scrollbar {
     width: 4px;
     height: 4px;
