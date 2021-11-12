@@ -2,6 +2,12 @@
     display: flex;
     flex-direction: row;
 }
+.p-absol{
+    position: absolute;
+}
+.p-rel{
+    position: relative;
+}
 .flex-column{
     flex-direction: column;
 }
@@ -13,9 +19,19 @@
 }
 .align-items-center{
     align-items: center;
+    
+}
+.justify-items-start{
+    justify-items: start;
+}
+.justify-items-end{
+    justify-items: end;
+}
+.justify-items-center{
+    justify-items: center;
 }
 .text-white{
-    color: #fff;
+    color: #fff !important;
 }
 .mt-2{
     margin-top: 20px;

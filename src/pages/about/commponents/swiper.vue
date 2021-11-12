@@ -20,22 +20,22 @@
           <div class="content">2015年，先后与当时行业内几家巨头取得合作。</div>
         </div>
         <div class="d-flex flex-column align-items-start history-item">
-          <img src="../../../public/img/Desktop/xxsj-wbe_aboutus/Shape(1).png" alt="">
-          <div class="title">2013年</div>
+          <img src="../../../public/img/Desktop/xxsj-wbe_aboutus/career.png" alt="">
+          <div class="title">2017年</div>
           <div class="line-pink"></div>
-          <div class="content">2013年，四川英瑞仕科技有限公司，涉足行业，初步以3C零配件供给为主，以电商行业为依托，联合当时某行业巨头向其门店供应3C配件。</div>
+          <div class="content">2017年开启移动转售业务全国代理，至此已合作移动转售企业高达15家，成为全国获得移动转售业务代理资质最多的企业之一。</div>
         </div>
         <div class="d-flex flex-column align-items-start history-item">
-          <img src="../../../public/img/Desktop/xxsj-wbe_aboutus/Shape(2).png" alt="">
-          <div class="title">2014年</div>
+          <img src="../../../public/img/Desktop/xxsj-wbe_aboutus/industry.png" alt="">
+          <div class="title">2019年</div>
           <div class="line-pink"></div>
-          <div class="content">2014年，开始移动转售业务（虚拟运营商）代理，成为全国首家从事移动转售业务的代理商。</div>
+          <div class="content">2019年开始涉足从事大宗贸易行业，次年筹备与国企联合申请移动转售资质，不久开始向工信部提交材料申请。</div>
         </div>
         <div class="d-flex flex-column align-items-start history-item">
-          <img src="../../../public/img/Desktop/xxsj-wbe_aboutus/Shape.png" alt="">
-          <div class="title">2015-2016年</div>
+          <img src="../../../public/img/Desktop/xxsj-wbe_aboutus/profession.png" alt="">
+          <div class="title">2021年</div>
           <div class="line-pink"></div>
-          <div class="content">2015年，先后与当时行业内几家巨头取得合作。</div>
+          <div class="content">2021，成立专业的语音坐席管理系统开发公司，注重企业语音解决方案，投入大量资金开发企业语音系统。</div>
         </div>
       </div>
   </div>
@@ -44,18 +44,33 @@
 <script setup>
     import { ref,defineProps,onMounted,watch} from 'vue'
 
-     const sliderCurrent = defineProps({
+     const props = defineProps({
          sliderCurrent:Boolean
-     })
-     watch(()=>sliderCurrent,(newVal,oldVal)=>{
-         console.log(newVal)
      })
 
      const swiperScroll = ref(null)
-     onMounted(() => {
-         
-         console.log(swiperScroll.value.scrollLeft)
+
+     watch(()=>props.sliderCurrent,(newVal)=>{
+         if(newVal){
+           var timerRight = setInterval(scrollRight,1)
+           setTimeout(()=>{
+             clearInterval(timerRight)
+           },750)
+         }else{
+           var timerLeft = setInterval(scrollLeft,1)
+           setTimeout(()=>{
+             clearInterval(timerLeft)
+           },750)
+         }
      })
+     const scrollRight = ()=>{
+       swiperScroll.value.scrollLeft += 8
+       console.log(swiperScroll.value.scrollLeft)
+     }
+     const scrollLeft = ()=>{
+       console.log(swiperScroll.value.scrollLeft)
+       swiperScroll.value.scrollLeft -= 8
+     }
 </script>
 
 <style lang="scss" scoped>
