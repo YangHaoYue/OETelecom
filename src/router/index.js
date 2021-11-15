@@ -15,7 +15,12 @@
         path:'/joinus',
         name:'JoinUs',
         component:()=> import ('../pages/joinUs.vue')
-    }
+     },
+     {
+        path:'/news',
+        name:'News',
+        component:()=> import ('../pages/news.vue')
+     }
  ]
 
  const router = createRouter({

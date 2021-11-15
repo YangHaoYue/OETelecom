@@ -112,7 +112,7 @@
   .aboutUs{
     background-image: url('../../public/img/Desktop/xxsj-wbe_aboutus/TestimonialBackground.png');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
     height: 980px;
     display: flex;
     flex-direction: column;
@@ -171,14 +171,14 @@
   .beehive{
     background-image: url('../../public/img/Desktop/xxsj-wbe_aboutus/bg1.png');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
     height: 800px;
     margin-top: 80px;
   }
   .products{
     background-image: url('../../public/img/Desktop/xxsj-wbe_aboutus/products.png');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
     height: 620px;
     padding: 40px 40px 0;
     .title{
@@ -192,7 +192,7 @@
     .video-item{
       background-image: url('../../public/img/Desktop/xxsj-wbe_aboutus/copy.png');
       background-repeat: no-repeat;
-      background-size: 100%;
+      background-size: 100% 100%;
       height: 386px;
       width: 270px;
       margin: auto;
@@ -201,7 +201,7 @@
   .joinUs{
       background-image: url('../../public/img/Desktop/xxsj-wbe_aboutus/joinUs.png');
       background-repeat: no-repeat;
-      background-size: 100%;
+      background-size: 100% 100%;
       height: 586px;
       padding: 50px 80px 0;
       .title{

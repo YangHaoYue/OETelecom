@@ -64,7 +64,6 @@ import {
 } from '@vicons/ionicons5'
 
 let activeKey = ref(0)
-console.log(activeKey.value)
 
 function renderIcon (icon) {
   return () => h(NIcon, null, { default: () => h(icon) })
@@ -100,7 +99,7 @@ const menuOptions = [
       h(
         resolveComponent('router-link'),
         {
-          to: '/'
+          to: '/news'
         },
         { default: () => '新闻资讯' }
       ),

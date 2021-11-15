@@ -42,35 +42,31 @@
 </template>
 
 <script setup>
-    import { ref,defineProps,onMounted,watch} from 'vue'
-
-     const props = defineProps({
-         sliderCurrent:Boolean
-     })
-
-     const swiperScroll = ref(null)
-
-     watch(()=>props.sliderCurrent,(newVal)=>{
-         if(newVal){
-           var timerRight = setInterval(scrollRight,1)
-           setTimeout(()=>{
-             clearInterval(timerRight)
-           },750)
-         }else{
-           var timerLeft = setInterval(scrollLeft,1)
-           setTimeout(()=>{
-             clearInterval(timerLeft)
-           },750)
-         }
-     })
-     const scrollRight = ()=>{
-       swiperScroll.value.scrollLeft += 8
-       console.log(swiperScroll.value.scrollLeft)
-     }
-     const scrollLeft = ()=>{
-       console.log(swiperScroll.value.scrollLeft)
-       swiperScroll.value.scrollLeft -= 8
-     }
+    import { ref,defineProps,watch} from 'vue'
+     
+    const props = defineProps({
+       sliderCurrent:Boolean
+    })
+    const swiperScroll = ref(null)
+    watch(()=>props.sliderCurrent,(newVal)=>{
+        if(newVal){
+          var timerRight = setInterval(scrollRight,1)
+          setTimeout(()=>{
+            clearInterval(timerRight)
+          },750)
+        }else{
+          var timerLeft = setInterval(scrollLeft,1)
+          setTimeout(()=>{
+            clearInterval(timerLeft)
+          },750)
+        }
+    })
+    const scrollRight = ()=>{
+      swiperScroll.value.scrollLeft += 8
+    }
+    const scrollLeft = ()=>{
+      swiperScroll.value.scrollLeft -= 8
+    }
 </script>
 
 <style lang="scss" scoped>
