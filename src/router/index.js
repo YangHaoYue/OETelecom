@@ -20,6 +20,11 @@
         path:'/news',
         name:'News',
         component:()=> import ('../pages/news.vue')
+     },
+     {
+        path:'/products',
+        name:'Products',
+        component:()=> import ('../pages/products.vue')
      }
  ]
 

@@ -87,7 +87,7 @@ const menuOptions = [
       h(
         resolveComponent('router-link'),
         {
-          to: '/'
+          to: '/products'
         },
         { default: () => '产品中心' }
       ),

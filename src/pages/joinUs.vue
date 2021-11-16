@@ -90,6 +90,7 @@
                             type="textarea"
                             placeholder="描述您的问题详情"
                             clearable
+                            :autosize="{ minRows: 3}"
                         />
                     </n-space>
                     <n-button class="mt-2 w-100" color="#20EBFD" type="info" size="large">提交</n-button>
