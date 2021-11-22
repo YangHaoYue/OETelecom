@@ -22,7 +22,7 @@
       <div class="title">发展历程</div>
       <swiper :sliderCurrent="sliderCurrent"></swiper>
       <div class="slider" @click="changeSlider">
-        <div class="item" :class="sliderCurrent?'slide-right':'slide-left'"></div>
+        <div class="item" :class="sliderCurrent?'slide-item-right':'slide-item-left'"></div>
       </div>
     </div>
 
@@ -231,6 +231,9 @@
         font-size: 24px;
         background-image: linear-gradient(to bottom,#FE6D01,#E89954);
       }
+    .joinBtn:hover{
+      cursor: pointer;
+    }
   }
   .Investment{
     padding: 50px 150px;

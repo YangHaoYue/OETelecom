@@ -34,17 +34,17 @@
             </n-grid-item>
           </n-grid>
       </div>
-      <img src="../public/img/Desktop/xxsj-wbe_Product details/caseA.png" class="caseA" alt="">
-      <img src="../public/img/Desktop/xxsj-wbe_Product details/caseB.png" class="caseB" alt="">
-      <img src="../public/img/Desktop/xxsj-wbe_Product details/caseC.png" class="caseC" alt="">
-      <img src="../public/img/Desktop/xxsj-wbe_Product details/caseD.png" class="caseD" alt="">
-      <img src="../public/img/Desktop/xxsj-wbe_Product details/caseE.png" class="caseE" alt="">
-      <img src="../public/img/Desktop/xxsj-wbe_Product details/caseF.png" class="caseF" alt="">
+      <img src="../public/img/Desktop/xxsj-wbe_Product/caseA.png" class="caseA" alt="">
+      <img src="../public/img/Desktop/xxsj-wbe_Product/caseB.png" class="caseB" alt="">
+      <img src="../public/img/Desktop/xxsj-wbe_Product/caseC.png" class="caseC" alt="">
+      <img src="../public/img/Desktop/xxsj-wbe_Product/caseD.png" class="caseD" alt="">
+      <img src="../public/img/Desktop/xxsj-wbe_Product/caseE.png" class="caseE" alt="">
+      <img src="../public/img/Desktop/xxsj-wbe_Product/caseF.png" class="caseF" alt="">
+      <img src="../public/img/Desktop/xxsj-wbe_Product/thunder.png" class="caseF" alt="">
   </div>
 </template>
 
 <script setup>
-    import {  } from 'vue'
     import { NGrid,NGridItem } from 'naive-ui'
 
     const scrollToItem = (className)=>{
@@ -60,10 +60,10 @@
 .products{
     font-size: 0;
     .head{
-        background-image: url('../public/img/Desktop/xxsj-wbe_Product details/head.png');
-        background-size: 100%;
+        background-image: url('../public/img/Desktop/xxsj-wbe_Product/head.png');
+        background-size: 100% 100%;
         background-repeat: no-repeat;
-        height: 540px;
+        min-height: 440px;
         padding: 500px 400px 0;
         .case{
             width: 150px;
@@ -81,7 +81,6 @@
     }
     img{
         width: 100%;
-        margin: 0;
     }
 }
 </style>

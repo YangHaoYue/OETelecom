@@ -60,7 +60,9 @@ import { NIcon,NMenu,NSpace,NConfigProvider,darkTheme,NLayout,NLayoutContent,NLa
 import {
   BookOutline as BookIcon,
   PersonOutline as PersonIcon,
-  WineOutline as WineIcon
+  WineOutline as WineIcon,
+  HomeOutline as HomeOutLine,
+  IdCardOutline as IdCardOutLine
 } from '@vicons/ionicons5'
 
 let activeKey = ref(0)
@@ -80,7 +82,7 @@ const menuOptions = [
         { default: () => '首页' }
       ),
     key: 'go-back-home',
-    icon: renderIcon(BookIcon)
+    icon: renderIcon(HomeOutLine)
   },
   {
     label: () =>
@@ -92,7 +94,7 @@ const menuOptions = [
         { default: () => '产品中心' }
       ),
     key: 'go-center',
-    icon: renderIcon(BookIcon)
+    icon: renderIcon(IdCardOutLine)
   },
   {
     label: () =>

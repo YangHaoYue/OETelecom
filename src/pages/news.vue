@@ -61,7 +61,7 @@
           <div class="title">行业新闻</div>
           <div class="content" style="margin-bottom:40px;">Trade News</div>
           <div class="d-flex flex-column">
-              <div class="line-card">
+              <div class="line-card slide-right" :class="scrollTop>500?'play':''"  style="animation-delay: .2s">
                   <div class="time">
                       <div class="day">10</div>
                       <div class="date">2021-10</div>
@@ -72,7 +72,7 @@
                       <div style="margin-top:5px;color:#FCFF00;font-size:14px;text-align:right;">详情>></div>
                   </div>
               </div>
-              <div class="line-card">
+              <div class="line-card slide-right" :class="scrollTop>500?'play':''" style="animation-delay: .4s">
                   <div class="time">
                       <div class="day">10</div>
                       <div class="date">2021-10</div>
@@ -83,7 +83,7 @@
                       <div style="margin-top:5px;color:#FCFF00;font-size:14px;text-align:right;">详情>></div>
                   </div>
               </div>
-              <div class="line-card">
+              <div class="line-card slide-right" :class="scrollTop>500?'play':''" style="animation-delay: .6s">
                   <div class="time">
                       <div class="day">10</div>
                       <div class="date">2021-10</div>
@@ -148,8 +148,11 @@
 </template>
 
 <script setup>
-    import {  } from 'vue'
+    import { reactive } from 'vue'
     import { NButton } from 'naive-ui'
+    import watchScorll from '../hooks/watchScorll'
+
+    const scrollTop = watchScorll()
 </script>
 
 <style scoped lang="scss">
@@ -373,7 +376,7 @@
     .newsCard:hover{
         transform: scale(1.15);
         transition: all 0.4s ease 0s;
-        -webkit-transform: scale(1.15);
+        -webkit-transform: scale(1.06);
         background: linear-gradient(to bottom,#FF7F8E,#E14F60);
         color: #fff;
         .title{

@@ -9,8 +9,8 @@
       </div>
       <div class="d-flex justify-items-center align-items-center w-100 flex-column" style="margin:90px 0;">
           <div class="d-flex">
-              <img src="../public/img/Desktop/xxsj-wbe_join-us/two-girls.png" alt="" style="width:761px;height:521px;">
-              <div class="card" style="margin: 60px 0 0 -240px;">
+              <img class="slide-right" :class="scrollTop>150?'play':''" src="../public/img/Desktop/xxsj-wbe_join-us/two-girls.png" alt="" style="width:761px;height:521px;">
+              <div class="card slide-left" :class="scrollTop>150?'play':''" style="margin: 60px 0 0 -240px;">
                   <div class="title">客服</div>
                   <div class="content">1、遵循标准服务用语规范和操作规范，受理、解决客户在产品使用过程中遇到的各种问题</div>
                   <div class="content">2、协助进行增值服务操作或受理客户咨询、投诉和建议；</div>
@@ -27,7 +27,7 @@
       </div>
       <div class="d-flex justify-items-center align-items-center w-100 flex-column" style="margin:90px 0;">
           <div class="d-flex">
-              <div class="card" style="margin: 60px -240px 0 0;">
+              <div class="card slide-right" :class="scrollTop>500?'play':''" style="margin: 60px -240px 0 0;">
                   <div class="title">产品营销专员</div>
                   <div class="content"> 1、参与公司战略目标规划，负责公司各类产品的销售战略制定和发展目标制定；</div>
                   <div class="content">2、积极联系客户，与客户进行有效沟通，了解客户需求；</div>
@@ -39,13 +39,13 @@
                   <div class="content">3、对销售工作有较高的热情，能够承受工作压力，自信心强，有挑战高薪的勇气；</div>
                   <div class="sendBtn">意向职位，发送个人简历</div>
               </div>
-              <img src="../public/img/Desktop/xxsj-wbe_join-us/computer.png" alt="" style="width:761px;height:521px;">
+              <img class="slide-left" :class="scrollTop>500?'play':''" src="../public/img/Desktop/xxsj-wbe_join-us/computer.png" alt="" style="width:761px;height:521px;">
           </div>
       </div>
       <div class="d-flex justify-items-center align-items-center w-100 flex-column" style="margin:90px 0;">
           <div class="d-flex">
-              <img src="../public/img/Desktop/xxsj-wbe_join-us/book.png" alt="" style="width:761px;height:521px;">
-              <div class="card" style="margin: 60px 0 0 -240px;">
+              <img class="slide-right" :class="scrollTop>1200?'play':''" src="../public/img/Desktop/xxsj-wbe_join-us/book.png" alt="" style="width:761px;height:521px;">
+              <div class="card slide-left" :class="scrollTop>1200?'play':''" style="margin: 60px 0 0 -240px;">
                   <div class="title">新媒体文案</div>
                   <div class="content">1、独立运营公司微信公众号，负责微信公众账号的日常运营和维护工作；</div>
                   <div class="content">2、策划微信公众号整套运营方案，及微信公众号活动方案；</div>
@@ -104,7 +104,9 @@
 
 <script setup>
     import { NGrid,NGi,NSpace,NInput,NButton } from 'naive-ui'
-    import { reactive } from 'vue'
+    import watchScorll from '../hooks/watchScorll'
+
+    import { reactive,onMounted,ref,watch } from 'vue'
     const inputStyle = {
         borderColor: '#20EBFD',
     }
@@ -114,6 +116,11 @@
         QQ:'',
         email:'',
         question:''
+    })
+
+    const scrollTop = watchScorll()
+    watch(()=>scrollTop.value,newVal=>{
+          console.log(newVal)
     })
 </script>
 
@@ -167,6 +174,11 @@
     line-height: 60px;
     margin-left: auto;
     margin-top: auto;
+    transition: all 1s ease 0s;
+}
+.sendBtn:hover{
+  cursor:pointer;
+  box-shadow: 10px 10px 13px 0px rgba(246, 48, 48, 0.4);
 }
 .connectUs{
     background-image: url('../public/img/Desktop/xxsj-wbe_join-us/connectUs.png');
@@ -195,5 +207,8 @@
     color: #FFFFFF;
     line-height: 50px;
     text-align: center;
+}
+.phone-line:hover{
+    cursor: pointer;
 }
 </style>
