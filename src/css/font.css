@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'ZhenyanGB';
+    src: url('../assets/zhenyanGB.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HYRuiZhiW';
+    src: url('../assets/HYRuiZhiW.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
